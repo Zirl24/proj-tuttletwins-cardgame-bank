@@ -1,11 +1,10 @@
 contin = True
-money = 4
+money = []
 
-while contin:
-    print(f"Money: {money}")
-    calc = input("Change amount:")
-    if calc == "end":
-        print("Session Terminated")
-        contin = False
-    else:
-        money += int(calc)
+playerCount = input("How many players?:")
+playerCount = int(playerCount)
+while playerCount > 0:
+    money.append(4)
+    playerCount -= 1
+
+print(money)
