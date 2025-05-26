@@ -1,10 +1,12 @@
 contin = True
-money = []
+money = {}
 
-playerCount = input("How many players?:")
-playerCount = int(playerCount)
-while playerCount > 0:
-    money.append(4)
-    playerCount -= 1
+while contin:
+    player = input("Add Player: ")
+    if player == "start":
+        contin = False
+    else:
+        money[player] = 4
+        print(f"added {player}")
 
-print(money)
+contin = True
