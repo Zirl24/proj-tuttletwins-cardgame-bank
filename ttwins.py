@@ -18,7 +18,7 @@ contin = True
 
 def view_all():
     for name, balance in players.items():
-            print(f"{name}: {balance}")
+            print(f"{name}: {balance}k")
 
 while contin:
     currentPlayer = input("View which player: ")
